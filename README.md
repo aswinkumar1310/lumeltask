@@ -26,6 +26,7 @@ sales data import url
     to upload file csv file. pass csv file in formdata as request key is file
 
 2. revenue reports API
+
 | Field  | Value                        |
 |--------|------------------------------|
 | url    | baseURL/products/revenue      |
