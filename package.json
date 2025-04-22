@@ -1,0 +1,31 @@
+{
+  "name": "commerize",
+  "version": "1.0.0",
+  "description": "Commerize is an all-in-one shop management app with an integrated online store, designed to simplify inventory, sales, and customer management. Perfect for businesses of all sizes looking to streamline operations and boost online sales.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/install",
+    "start:dev": "nodemon ./bin/install"
+  },
+  "author": "Aswinkumar Baskar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.9",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "pug": "^3.0.3",
+    "sib-api-v3-sdk": "^8.5.0"
+  }
+}
