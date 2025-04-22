@@ -17,15 +17,20 @@ baseURL=http://localhost:3000/api/v1/
 
 sales data import url
 # API Request Information
-1. | url    | baseurl/products/uploads|
-   | method |   post                   |
+1. 
+| Field  | Value                        |
+|--------|------------------------------|
+| url    | baseurl/products/uploads     |
+| method | post                         |
+
     to upload file csv file. pass csv file in formdata as request key is file
 
 2. revenue reports API
-   
-   | url  | baseURL/products/revenue |
-   | method | post                   |
-   
+| Field  | Value                        |
+|--------|------------------------------|
+| url    | baseURL/products/revenue      |
+| method | post                         |
+
     params :
     startDate=2024-05-18 required
     endDate=2024-05-18 required
@@ -54,47 +59,46 @@ present under services directory ,file named as cronservices.js
 i writtened mongoose schema for below mentioned in model folder under products service module
 
 # user Schema
-|feild  | type  |
-|---------------|
-|firstName|String|
-|lastName|  String|
-|password|  String|
-|email  |   String|
-|isActive|  Boolean|
-|countryCode|String|
-|phoneNumber|String|
-|address    |String|
-|city   |   String|
-|region |   String|
-|createdAt  | Date|
-|updateAt   | Date|
+| Field        | Type    |
+|--------------|---------|
+| firstName    | String  |
+| lastName     | String  |
+| password     | String  |
+| email        | String  |
+| isActive     | Boolean |
+| countryCode  | String  |
+| phoneNumber  | String  |
+| address      | String  |
+| city         | String  |
+| region       | String  |
+| createdAt    | Date    |
+| updatedAt    | Date    |
 
 # products schema
 
+| Field       | Type    |
+|-------------|---------|
+| name        | String  |
+| category    | String  |
+| quantity    | Number  |
+| price       | Number  |
+| discount    | Number  |
+| barcode     | String  |
+| expiryDate  | Date    |
+| isActive    | Boolean |
+| createdAt   | Date    |
+| updatedAt   | Date    |
 
-|feild  | type  |
-|---------------|
-|name|String    |
-|category|String|
-|quantity|Number|
-|price|Number   |
-|discount|Number|
-|barcode|String |
-|expiryDate|Date|
-|isActive|Boolean|
-|createdAt|Date  |
-|updateAt|Date   |
 # Order Schema
 
-
-|feild  | type      |
-|-------------------|
-|userId|ObjectId    |
-|quantity|Number    |
-|priceAtSale|Number |
-|orderType|String   |
-|status|String      |
-|items|Array        |
+| Field        | Type      |
+|--------------|-----------|
+| userId       | ObjectId  |
+| quantity     | Number    |
+| priceAtSale  | Number    |
+| orderType    | String    |
+| status       | String    |
+| items        | Array     |
 
 belows are enum and references
 orderType: String (Enum: ['online', 'in_store'], Default: in_store)
